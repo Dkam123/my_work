@@ -1,22 +1,14 @@
-class Auto():
+class Book():
 
-    def __init__(self, name, age, producer, volume, color):
+    def __init__(self, name, publication, genre, author, price):
         self.name = name
-        self.age = age
-        self.producer = producer
-        self.volume = volume
-        self.color = color
+        self.publication = publication
+        self.genre = genre
+        self.autor = author
+        self.price = price
 
     def show(self):
-        print(f"Car: {self.name}, {self.age}, {self.producer}, {self.volume}, {self.color}")
+        print(f"It is book a: Book title - {self.name}, Autor name: {self.publication}, Genre a book: {self.genre}, Year of publication: {self.autor}, Price: {self.price}")
 
-d = Auto("volkswagen", 2016, "Germany", 1.8, "gray")
-
-d.show()
-
-
-
-
-
-
-
+b = Book("The richest man in Babylon", "George Samuel Clayson", "Business Books", 1926, 230)
+b.show()
